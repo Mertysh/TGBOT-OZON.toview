@@ -1,0 +1,13 @@
+version: "3.3"
+
+services:
+  bot:
+    container_name: bot
+    build:
+      context: ./code
+    restart: always
+
+    volumes:
+      - ./data:/data
+    # env_file:
+    #   - .env
